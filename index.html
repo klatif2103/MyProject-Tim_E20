@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim E20</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+   <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="Logo-E20.jpg">
+        </div>
+        <span class="fa fa-bars menu-icon"></span>
+        <div class="header-right">
+          <nav>
+              <a href="#beranda">Beranda</a>
+              <a href="#profil">Profil</a>
+              <a href="#layanan">Layanan</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+  
+  
+  <slideshow>
+  <div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="number">1 / 2</div>
+  <img src="slide1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="number">2 / 2</div>
+  <img src="slide2.png" style="width:100%">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000);
+}
+</script>
+    </slide>
+
+<profil>
+      <div id="profil" class="container card">
+    <div class="myprofil">
+        <h2>Profil Tim E20</h2>
+      </div>
+      <div  class="profils">
+        <div class="profil-list">
+          <div class="profil-item">
+            <img src="1.png">  
+          </div>
+          <div class="bio">
+            <p>Indriastuti Catur Retno W Ichsan</p>
+            <p>0447977130-31</p>
+          </div>
+        </div>
+        <div class="profil-list">
+          <div class="profil-item">
+            <img src="2.png">  
+          </div>
+            <div class="bio">
+            <p>Jamila Larasati</p>
+            <p>0447977130-1</p>
+          </div>
+        </div>
+        <div class="profil-list">
+          <div class="profil-item">
+            <img src="3.png">
+          </div>
+            <div class="bio">
+            <p>Johan Hendra Setiawan</p>
+            <p>0447977151-164</p>
+          </div>
+        </div>
+        <div class="profil-list">
+          <div class="profil-item">
+            <img src="4.png">
+          </div>
+            <div class="bio">
+            <p>Imam Surya Kusumah</p>
+            <p>0447977131-218</p>
+          </div>
+        </div>
+        <div class="profil-list">
+            <div class="profil-item">
+              <img src="5.png">
+            </div>
+            <div class="bio">
+              <p>Khaerul Latif</p> 
+              <p>0447977131-159</p>
+            </div>
+            </div>
+        </div>
+      </div>
+</profil>
+  
+   <div class="footer">
+		<marquee>Terima kasih telah mengunjungi website Team E20</marquee>
+		<div class="footer-logo">
+			<p>Copyright @2020 Team E20 Project Progate</p>   
+			<p>Digital Talent Scholarship</p>   
+		</div>
+		
+		<div class="footer-list">  
+			
+			<p>Follow Us and Get Inspired By Team E20</p>
+			<table> 
+				<tr>
+					<td><a href="#"><img src="facebook.png" width="30" height="30" title="Facebook"></a></td>
+					<td><a href="#"><img src="instagram.png" width="40" height="40" title="Instagram"></a></td>
+					<td><a href="#"><img src="twitter.png" width="30" height="30" title="Twitter"></a></td>
+					<td><a href="#"><img src="pinterest.png" width="30" height="30" title="Pinterest"></a></td>
+					<td><a href="#"><img src="youtube.png" width="35" height="35" title="Youtube"></a></td>
+					<td><a href="#"><img src="telegram.png" width="30" height="30" title="Telegram"></a></td>
+					<td><a href="#"><img src="whatsapp.png" width="30" height="30" title="WhatsApp"></a></td>
+				</tr> 
+			</table>     
+		</div>   
+    </div>
+</body>
+</html>
